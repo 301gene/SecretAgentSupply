@@ -15,8 +15,8 @@ h1, h4 {
 }
 
 .container {
-  width: 960px;
-  margin: 0px auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /* Header Section */
@@ -142,4 +142,73 @@ nav ul {
 footer {
   padding: 5em 0;
   margin-top: 4em;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .product.right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15em;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 1em 2em;
+    top: 10em;
+  }
+
+  .headline h4 {
+    font-size: .77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+  }
+
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.center {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5em auto;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
