@@ -42,6 +42,11 @@ header span {
   padding: 0.66rem 0;
 }
 
+.headline, .description, .info .title, footer {
+  background-color: black;
+  color: white;
+}
+
 /* Jumbotron (a.k.a. main banner) Section */
 
 .jumbotron {
@@ -53,8 +58,6 @@ header span {
 }
 
 .headline {
-  background-color: black;
-  color: white;
   position: relative;
   top: 9rem;
   width: 20rem;
@@ -67,6 +70,76 @@ header span {
 
 .headline h1 {
   font-size: 2rem;
-  margin: 0.25px;
+  margin: 0.25rem 0;
   line-height: 1.2em;
+}
+
+/* Navigation Bar */
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* Products section */
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  border: 4px solid black;
+  height: 9em;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 8em;
+}
+
+.description {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Business Info Section */
+
+.business-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  padding: 1em 2em;
+}
+
+footer {
+  padding: 5em 0;
+  margin-top: 4em;
 }
